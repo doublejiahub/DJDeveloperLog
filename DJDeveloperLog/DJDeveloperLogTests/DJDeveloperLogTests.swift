@@ -2,7 +2,7 @@
 //  DJDeveloperLogTests.swift
 //  DJDeveloperLogTests
 //
-//  Created by 郝旭姗 on 2021/3/14.
+//  Created by haojiajia02 on 2021/3/14.
 //
 
 import XCTest
