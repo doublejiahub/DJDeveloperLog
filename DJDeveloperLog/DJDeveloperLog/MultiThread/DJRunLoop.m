@@ -31,4 +31,8 @@ RunLoop 与线程
 
 @implementation DJRunLoop
 
+- (void)deep {
+    NSRunLoop *currentRunLoop = [NSRunLoop currentRunLoop];
+}
+
 @end

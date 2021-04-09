@@ -1,0 +1,12 @@
+# customic pods definitions
+# e.g.:
+
+# integrate FMDB as binary and enable source map
+# set 'FMDB', :mode =>:binary, :source_map => true
+
+# integrate MyDevPod as development mode, and you can modify the source files.
+# set 'MyDevPod', :mode => :dev
+
+# integrate MyPod as source code mode, but you CAN NOT update the source files.
+# set 'MyPod', :mode => :source
+
