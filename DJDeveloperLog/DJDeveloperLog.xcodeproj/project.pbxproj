@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,9 @@
 		0AAB2DF42611897000F8B6DF /* DJLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAB2DF02611897000F8B6DF /* DJLock.m */; };
 		0AAB2DF52611897000F8B6DF /* DJRunLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAB2DF12611897000F8B6DF /* DJRunLoop.m */; };
 		0AAE1DD12615632B005FA49F /* DJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAE1DD02615632B005FA49F /* DJViewController.m */; };
+		0ADFFFB9262D74BE00EB86B8 /* CPMessageBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFFFB3262D74BE00EB86B8 /* CPMessageBall.m */; };
+		0ADFFFBA262D74BE00EB86B8 /* CPPluginScreenRecorder+DeviceInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFFFB5262D74BE00EB86B8 /* CPPluginScreenRecorder+DeviceInput.m */; };
+		0ADFFFBB262D74BE00EB86B8 /* CPPluginScreenRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFFFB7262D74BE00EB86B8 /* CPPluginScreenRecorder.m */; };
 		0AE563D5260D998B00B1E047 /* UIButton+HitRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE563D4260D998B00B1E047 /* UIButton+HitRect.m */; };
 		0AE563DD260D9C3B00B1E047 /* DJBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE563DC260D9C3B00B1E047 /* DJBlock.m */; };
 		1D02018A25FDF6D800FB10A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02018925FDF6D800FB10A2 /* AppDelegate.swift */; };
@@ -81,6 +84,12 @@
 		0AAB2DF12611897000F8B6DF /* DJRunLoop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJRunLoop.m; sourceTree = "<group>"; };
 		0AAE1DCF2615632A005FA49F /* DJViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJViewController.h; sourceTree = "<group>"; };
 		0AAE1DD02615632B005FA49F /* DJViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJViewController.m; sourceTree = "<group>"; };
+		0ADFFFB3262D74BE00EB86B8 /* CPMessageBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPMessageBall.m; sourceTree = "<group>"; };
+		0ADFFFB4262D74BE00EB86B8 /* CPPluginScreenRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPPluginScreenRecorder.h; sourceTree = "<group>"; };
+		0ADFFFB5262D74BE00EB86B8 /* CPPluginScreenRecorder+DeviceInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CPPluginScreenRecorder+DeviceInput.m"; sourceTree = "<group>"; };
+		0ADFFFB6262D74BE00EB86B8 /* CPMessageBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPMessageBall.h; sourceTree = "<group>"; };
+		0ADFFFB7262D74BE00EB86B8 /* CPPluginScreenRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPPluginScreenRecorder.m; sourceTree = "<group>"; };
+		0ADFFFB8262D74BE00EB86B8 /* CPPluginScreenRecorder+DeviceInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CPPluginScreenRecorder+DeviceInput.h"; sourceTree = "<group>"; };
 		0AE563D3260D998B00B1E047 /* UIButton+HitRect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+HitRect.h"; sourceTree = "<group>"; };
 		0AE563D4260D998B00B1E047 /* UIButton+HitRect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+HitRect.m"; sourceTree = "<group>"; };
 		0AE563DB260D9C3B00B1E047 /* DJBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJBlock.h; sourceTree = "<group>"; };
@@ -193,6 +202,19 @@
 			path = MultiThread;
 			sourceTree = "<group>";
 		};
+		0ADFFFB2262D74BE00EB86B8 /* ScreenRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				0ADFFFB3262D74BE00EB86B8 /* CPMessageBall.m */,
+				0ADFFFB4262D74BE00EB86B8 /* CPPluginScreenRecorder.h */,
+				0ADFFFB5262D74BE00EB86B8 /* CPPluginScreenRecorder+DeviceInput.m */,
+				0ADFFFB6262D74BE00EB86B8 /* CPMessageBall.h */,
+				0ADFFFB7262D74BE00EB86B8 /* CPPluginScreenRecorder.m */,
+				0ADFFFB8262D74BE00EB86B8 /* CPPluginScreenRecorder+DeviceInput.h */,
+			);
+			path = ScreenRecorder;
+			sourceTree = "<group>";
+		};
 		0AE563DA260D9C0200B1E047 /* OCSpecialty */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +267,7 @@
 		1D02018825FDF6D800FB10A2 /* DJDeveloperLog */ = {
 			isa = PBXGroup;
 			children = (
+				0ADFFFB2262D74BE00EB86B8 /* ScreenRecorder */,
 				0AAB2DBC2611826B00F8B6DF /* Swift */,
 				0A21E49C2608BE71003D89C6 /* Arithmetic */,
 				0A799C3A260D830B00213C98 /* UI */,
@@ -291,7 +314,6 @@
 				E38D98FC86DACBA6E1C6178E /* Pods-DJDeveloperLogTests.debug.xcconfig */,
 				A0C0077CDB46D72D6D157A4A /* Pods-DJDeveloperLogTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -545,8 +567,11 @@
 				1D02018E25FDF6D800FB10A2 /* ViewController.swift in Sources */,
 				0AAB2DDF2611886F00F8B6DF /* DJRuntime.m in Sources */,
 				1D02018A25FDF6D800FB10A2 /* AppDelegate.swift in Sources */,
+				0ADFFFBB262D74BE00EB86B8 /* CPPluginScreenRecorder.m in Sources */,
 				0A21E4862608BC74003D89C6 /* DJPerson.m in Sources */,
+				0ADFFFBA262D74BE00EB86B8 /* CPPluginScreenRecorder+DeviceInput.m in Sources */,
 				0A799C43260D8A7D00213C98 /* DJButton.m in Sources */,
+				0ADFFFB9262D74BE00EB86B8 /* CPMessageBall.m in Sources */,
 				0A799C3D260D83A700213C98 /* DJView.m in Sources */,
 				1D02018C25FDF6D800FB10A2 /* SceneDelegate.swift in Sources */,
 				0A21E49E2608BE88003D89C6 /* Arithmetic.swift in Sources */,
