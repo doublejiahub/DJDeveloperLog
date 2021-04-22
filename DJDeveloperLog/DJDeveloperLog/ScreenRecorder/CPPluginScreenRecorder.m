@@ -8,8 +8,6 @@
 
 #import <Photos/Photos.h>
 #import "CPPluginScreenRecorder.h"
-#import "AppDelegate.h"
-
 #import "CPPluginScreenRecorder+DeviceInput.h"
 
 @interface CPPluginScreenRecorder()

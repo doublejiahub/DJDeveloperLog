@@ -8,6 +8,97 @@
 import Foundation
 import UIKit
 
+//Mark: try-catch
+enum VendingMachineError: Error {
+    case invalidSelection
+    case insufficientFunds(coinsNeeded: Int)
+    case outOfStock
+}
+
+struct Item {
+    var price: Int
+    var count: Int
+}
+
+class VendingMachine {
+    var inventory = [
+        "Candy Bar": Item(price: 12, count: 7),
+        "Chips": Item(price: 10, count: 4),
+        "Pretzels": Item(price: 7, count: 11)
+    ]
+    var coinsDeposited = 0
+
+    func vend(itemNamed name: String) throws {
+        guard let item = inventory[name] else {
+            throw VendingMachineError.invalidSelection
+        }
+
+        guard item.count > 0 else {
+            throw VendingMachineError.outOfStock
+        }
+
+        guard item.price <= coinsDeposited else {
+            throw VendingMachineError.insufficientFunds(coinsNeeded: item.price - coinsDeposited)
+        }
+
+        coinsDeposited -= item.price
+
+        var newItem = item
+        newItem.count -= 1
+        inventory[name] = newItem
+
+        print("Dispensing \(name)")
+        
+        let age = -3
+        assert(age >= 0, "A person's age cannot be less than zero")
+        // 因为 age < 0，所以断言会触发
+    }
+}
+
+
+
+class JJSwift {
+    
+    
+    func optional() {
+        ///The `Optional` type is an enumeration with two cases. `Optional.none` is
+        /// equivalent to the `nil` literal. `Optional.some(Wrapped)` stores a wrapped
+        /// value. For example:
+        ///
+        ///     let number: Int? = Optional.some(42)
+        ///     let noNumber: Int? = Optional.none
+        ///     print(noNumber == nil)
+        ///     // Prints "true"
+        
+        /*
+         @frozen public enum Optional<Wrapped> : ExpressibleByNilLiteral {
+
+             /// The absence of a value.
+             ///
+             /// In code, the absence of a value is typically written using the `nil`
+             /// literal rather than the explicit `.none` enumeration case.
+             case none
+
+             /// The presence of a value, stored as `Wrapped`.
+             case some(Wrapped)
+         */
+        var possibleNumer: Optional<Any>?
+        
+        //Swift 的 nil 和 Objective-C 中的 nil 并不一样。在 Objective-C 中，nil 是一个指向不存在对象的指针。在 Swift 中，nil 不是指针——它是一个确定的值，用来表示值缺失。任何类型的可选状态都可以被设置为 nil，不只是对象类型。
+        var number:Int? = nil
+    }
+    
+    func tuples() {
+        //元组
+        let http200Status = (statusCode:200, description:"OK")
+        print("The status code is \(http200Status.statusCode)")
+        // 输出“The status code is 200”
+        print("The status message is \(http200Status.description)")
+        // 输出“The status message is OK”
+    }
+}
+
+
 class Person: NSObject {
     var firstName: String
     var lastName: String

@@ -205,12 +205,12 @@
 		0ADFFFB2262D74BE00EB86B8 /* ScreenRecorder */ = {
 			isa = PBXGroup;
 			children = (
+				0ADFFFB6262D74BE00EB86B8 /* CPMessageBall.h */,
 				0ADFFFB3262D74BE00EB86B8 /* CPMessageBall.m */,
 				0ADFFFB4262D74BE00EB86B8 /* CPPluginScreenRecorder.h */,
-				0ADFFFB5262D74BE00EB86B8 /* CPPluginScreenRecorder+DeviceInput.m */,
-				0ADFFFB6262D74BE00EB86B8 /* CPMessageBall.h */,
 				0ADFFFB7262D74BE00EB86B8 /* CPPluginScreenRecorder.m */,
 				0ADFFFB8262D74BE00EB86B8 /* CPPluginScreenRecorder+DeviceInput.h */,
+				0ADFFFB5262D74BE00EB86B8 /* CPPluginScreenRecorder+DeviceInput.m */,
 			);
 			path = ScreenRecorder;
 			sourceTree = "<group>";
@@ -267,8 +267,8 @@
 		1D02018825FDF6D800FB10A2 /* DJDeveloperLog */ = {
 			isa = PBXGroup;
 			children = (
-				0ADFFFB2262D74BE00EB86B8 /* ScreenRecorder */,
 				0AAB2DBC2611826B00F8B6DF /* Swift */,
+				0ADFFFB2262D74BE00EB86B8 /* ScreenRecorder */,
 				0A21E49C2608BE71003D89C6 /* Arithmetic */,
 				0A799C3A260D830B00213C98 /* UI */,
 				0AE563DA260D9C0200B1E047 /* OCSpecialty */,
